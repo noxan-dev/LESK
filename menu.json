@@ -1,0 +1,51 @@
+{
+  "0": {
+    "name": "Sparlic",
+    "description": "Garlic and parsley dip (spicy or not) Jalapeno dip with onion",
+    "price": 0,
+    "status": "active"
+  },
+  "1":{
+    "name": "Olive Dip",
+    "description": "green olives w/mayo",
+    "price": 0,
+    "status": "active"
+  },
+  "2":{
+    "name": "Baba Ghanoush",
+    "description": "creamy eggplant dip",
+    "price": 0,
+    "status": "active"
+  },
+  "3":{
+    "name": "Onion Dip",
+    "description": "",
+    "price": 0,
+    "status": "active"
+  },
+  "4":{
+    "name": "Dill dip",
+    "description": "",
+    "price": 0,
+    "status": "active"
+  },
+  "5":{
+    "name": "Hummus",
+    "description": "",
+    "price": 0,
+    "status": "active"
+  },
+  "6":{
+    "name": "Matbucha",
+    "description": "green olives w/mayo",
+    "price": 0,
+    "status": "active"
+  },
+  "7":{
+    "name": "Garlic Confit",
+    "description": "green olives w/mayo",
+    "price": 0,
+    "status": "active"
+  }
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Now</title>
+  <script>
+    let data = fetch('http://localhost', {
+      method: 'POST',
+      headers: {'Content-type':'application/json; charset=UTF-8'},
+      body: JSON.stringify({
+        title: name,
+        body: body,
+      })
+    }).then()
+  </script>
+</head>
+<body>
+  <main>
+    <div>
+      <h1>Order Now</h1>
+      <form method="post">
+        <input id="name" type="text" value="Name">
+        <input id="body" type="text" value="Body">
+        <button type="submit">Order</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
