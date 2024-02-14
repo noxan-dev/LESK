@@ -12,7 +12,7 @@
     "status": "active"
   },
   "2":{
-    "name": "Baba Ghanoush",
+    "name": "Baba Ganoush",
     "description": "creamy eggplant dip",
     "price": 0,
     "status": "active"
@@ -24,7 +24,7 @@
     "status": "active"
   },
   "4":{
-    "name": "Dill dip",
+    "name": "Dill Dip",
     "description": "",
     "price": 0,
     "status": "active"

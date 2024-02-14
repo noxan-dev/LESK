@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js snap-y snap-mandatory scroll-smooth" lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -13,7 +13,7 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="img/favicon/favicon16.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
@@ -21,59 +21,75 @@
   <meta name="theme-color" content="#fafafa">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<div id="nav-toggle">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-  <nav class="grid grid-cols-2 px-4">
-    <div><img src="img/LSK-2.png" alt="logo" width="75"></div>
-    <div class="grid grid-cols-4 place-items-center">
-      <a href="">Home</a>
-      <a href="">Menu</a>
-      <a href="">Contact</a>
-      <a class="hidden" href="/order.html">Order</a>
-    </div>
-  </nav>
-  <section id="introduction" class="bg-gray-950 h-screen">
-    <div class="mx-auto">
-      <div class="text-emerald-950 font-bold leading-9 grid grid-rows-2 grid-flow-col">
-        <h1 class="row-span-2 text-5xl">LE'SK</h1>
-<!--        <img src="img/LSK-2.png" alt="logo" width="250">-->
-        <p class="row-span-1">Le'Kivied Shabbos Kodesh</p>
-        <p>
-          ADD TO YOUR SHABBOS TABLE A TASTE OF KEDUSHA
-          About us, We are a family run operation serving local Jewish communities. We are committed to bringing Le’Keived Shabbos Kodesh to your table.
-          Our dips are made fresh using the finest ingredients and love for Shabbos.
+<nav class="fixed px-4 invisible md:visible">
+  <div class="h-screen grid place-content-center font-bold">
+    <ul>
+      <li class="space-x-1"><span class="text-2xl">-</span><a class="hover:text-2xl" href="#introduction">Home</a></li>
+      <li class="space-x-1"><span class="text-2xl">-</span><a class="hover:text-2xl" href="#menu">Menu</a></li>
+      <li class="space-x-1"><span class="text-2xl">-</span><a class="hover:text-2xl" href="#contact">Contact</a></li>
+      <li class="hidden space-x-1"><span class="text-2xl">-</span><a class="hover:text-2xl" href="/order.html">Order</a></li>
+    </ul>
+  </div>
+</nav>
+<main>
+  <section id="introduction" class="snap-start">
+    <div class="mx-auto h-dvh md:h-screen">
+      <div class="grid text-center font-bold bg-[#e6e6e6] place-content-center md:bg-gradient-to-b md:from-[#e6e6e6] md:from-80% md:to-white md:h-3/5">
+        <div class="container">
+          <h1 class="text-[6rem]">LE'SK</h1>
+          <p class="text-lg leading-[6rem]">Le'Kivied Shabbos Kodesh</p>
+          <p class="text-lg">
+            ADD TO YOUR SHABBOS TABLE A TASTE OF KEDUSHA
+          </p>
+        </div>
+      </div>
+      <div class="about-us grid justify-center md:h-2/5">
+          <div class="flex justify-center">
+            <div class="flex flex-col md:flex-row gap-10 md:gap-20 w-2/4">
+              <p class="flex-none text-xl text-center font-bold">About Us:</p>
+              <p class="flex-1">
+                 We are a family run operation serving local Jewish
+                communities. We are committed to bringing Le’Keived Shabbos Kodesh to your table. Our dips are made fresh
+                using the finest ingredients and love for Shabbos.
 
-          From our table to yours,
-          Y&S Benkhen
-        </p>
-
+                <span class="block py-4">From our table to yours,</span>
+                <span class="text-lg font-['Brush_Script_MT']">
+                  - Y & S Benkhen
+                </span>
+              </p>
+            </div>
+          </div>
       </div>
     </div>
   </section>
-  <section id="menu" class="bg-zinc-50 h-screen">
-    <div>
-      <h2>DIPS - all dips are pareve made with meat equipment</h2>
-      <h3>MENU</h3>
-      <div id="dips">
-
+  <section id="menu" class="snap-start">
+    <div class="bg-[#e6e6e6] h-screen">
+      <div class="grid justify-center">
+        <div class="text-center">
+          <h2 class="text-2xl">DIPS</h2>
+          <h4 class="font-bold text-red-700">NOTE: All dips are pareve made with meat equipment</h4>
+        </div>
+        <div id="dips">
+          <h2 class="text-2xl underline text-center">MENU</h2>
+        </div>
       </div>
     </div>
   </section>
-  <section id="contact" class="bg-gray-950 h-screen">
-    <div>
+  <section id="contact" class="snap-start">
+    <div class="bg-gray-950 h-screen">
 
     </div>
   </section>
-
-  <script src="js/app.js"></script>
+</main>
+<script crossorigin="anonymous"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 
 </html>
