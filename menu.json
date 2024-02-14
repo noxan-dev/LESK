@@ -4,56 +4,64 @@
     "name": "Sparlic",
     "description": "Garlic and parsley dip (spicy or not) Jalapeno dip with onion",
     "price": 0,
-    "status": "active"
+    "status": "active",
+    "size": ["L", "XL"]
   },
   "1":{
     "image": "",
     "name": "Olive Dip",
     "description": "green olives w/mayo",
     "price": 0,
-    "status": "active"
+    "status": "active",
+    "size": []
   },
   "2":{
     "image": "",
     "name": "Baba Ganoush",
     "description": "creamy eggplant dip",
     "price": 0,
-    "status": "active"
+    "status": "active",
+    "size": []
   },
   "3":{
     "image": "",
     "name": "Onion Dip",
     "description": "",
     "price": 0,
-    "status": "active"
+    "status": "active",
+    "size": []
   },
   "4":{
     "image": "",
     "name": "Dill Dip",
     "description": "",
     "price": 0,
-    "status": "active"
+    "status": "active",
+    "size": []
   },
   "5":{
     "image": "",
     "name": "Hummus",
     "description": "",
     "price": 0,
-    "status": "active"
+    "status": "active",
+    "size": []
   },
   "6":{
     "image": "",
     "name": "Matbucha",
     "description": "green olives w/mayo",
     "price": 0,
-    "status": "active"
+    "status": "active",
+    "size": []
   },
   "7":{
     "image": "",
     "name": "Garlic Confit",
     "description": "green olives w/mayo",
     "price": 0,
-    "status": "active"
+    "status": "active",
+    "size": []
   }
 }
 
