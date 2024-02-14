@@ -8,8 +8,8 @@ $.getJSON('https://raw.githubusercontent.com/noxan-dev/LESK/master/menu.json?tok
           <img class="w-full" src="" alt="">
           <p><span>Name:</span> ${val.name}</p>
           <p class="flex gap-x-1"><span>About:</span> ${val.description}</p>
-          <p>Price: ${val.price}</p>
-          <p>Size: ${val.size}</p>
+          <p>Price: $${val.price}</p>
+          <p class="">Size: ${val.size.join(', ')}</p>
       </div>`);
   })
 })
