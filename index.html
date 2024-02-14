@@ -18,64 +18,68 @@
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+
   <script src="https://cdn.tailwindcss.com"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<nav class="fixed px-4 invisible md:visible">
+<nav class="fixed px-4 invisible md:visible w-max">
   <div class="h-screen grid place-content-center font-bold">
     <ul>
       <li class="space-x-1"><span class="text-2xl">-</span><a class="hover:text-2xl" href="#introduction">Home</a></li>
       <li class="space-x-1"><span class="text-2xl">-</span><a class="hover:text-2xl" href="#menu">Menu</a></li>
       <li class="space-x-1"><span class="text-2xl">-</span><a class="hover:text-2xl" href="#contact">Contact</a></li>
-      <li class="hidden space-x-1"><span class="text-2xl">-</span><a class="hover:text-2xl" href="/order.html">Order</a></li>
+      <li class="hidden space-x-1"><span class="text-2xl">-</span><a class="hover:text-2xl" href="/order.html">Order</a>
+      </li>
     </ul>
   </div>
 </nav>
 <main>
   <section id="introduction" class="snap-start">
     <div class="mx-auto h-dvh md:h-screen">
-      <div class="grid text-center font-bold bg-[#e6e6e6] place-content-center md:bg-gradient-to-b md:from-[#e6e6e6] md:from-80% md:to-white md:h-3/5">
+      <div
+        class="grid text-center font-bold place-content-center bg-gradient-to-b from-[#e6e6e6] from-80% to-white h-3/5">
         <div class="container">
-          <h1 class="text-[6rem]">LE'SK</h1>
-          <p class="text-lg leading-[6rem]">Le'Kivied Shabbos Kodesh</p>
-          <p class="text-lg">
+          <h1 class="font-['Cinzel_Decorative'] text-[6rem]">LE'SK</h1>
+          <p class="text-md md:text-lg leading-[6rem]">Le'Kivied Shabbos Kodesh</p>
+          <p class="text-md md:text-lg">
             ADD TO YOUR SHABBOS TABLE A TASTE OF KEDUSHA
           </p>
         </div>
       </div>
-      <div class="about-us grid justify-center md:h-2/5">
-          <div class="flex justify-center">
-            <div class="flex flex-col md:flex-row gap-10 md:gap-20 w-2/4">
-              <p class="flex-none text-xl text-center font-bold">About Us:</p>
-              <p class="flex-1">
-                 We are a family run operation serving local Jewish
-                communities. We are committed to bringing Le’Keived Shabbos Kodesh to your table. Our dips are made fresh
-                using the finest ingredients and love for Shabbos.
+      <div class="about-us grid justify-center h-2/5">
+        <div class="flex justify-center">
+          <div class="flex flex-col md:flex-row gap-y-2 md:gap-20 w-4/5 md:w-2/4">
+            <p class="flex-none text-xl text-center font-bold">About Us:</p>
+            <p class="flex-1">
+              We are a family run operation serving local Jewish
+              communities. We are committed to bringing Le’Keived Shabbos Kodesh to your table. Our dips are made fresh
+              using the finest ingredients and love for Shabbos.
 
-                <span class="block py-4">From our table to yours,</span>
-                <span class="text-lg font-['Brush_Script_MT']">
+              <span class="block py-4">From our table to yours,</span>
+              <span class="text-lg font-['Brush_Script_MT']">
                   - Y & S Benkhen
                 </span>
-              </p>
-            </div>
+            </p>
           </div>
+        </div>
       </div>
     </div>
   </section>
   <section id="menu" class="snap-start">
     <div class="bg-[#e6e6e6] h-screen">
-      <div class="grid justify-center">
+      <div class="flex flex-col justify-center">
         <div class="text-center">
           <h2 class="text-2xl">DIPS</h2>
           <h4 class="font-bold text-red-700">NOTE: All dips are pareve made with meat equipment</h4>
         </div>
-        <div id="dips">
-          <h2 class="text-2xl underline text-center">MENU</h2>
+        <h2 class="text-2xl underline text-center">MENU</h2>
+        <div id="dips" class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center">
+
         </div>
       </div>
     </div>
@@ -86,9 +90,7 @@
     </div>
   </section>
 </main>
-<script crossorigin="anonymous"
-        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="js/app.js"></script>
 </body>
 
