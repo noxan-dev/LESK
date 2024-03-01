@@ -25,7 +25,6 @@ var lastId,
    var item = $($(this).attr("href"));
     if (item.length) { return item; }
  });
-console.log(menuItems)
 // Bind click handler to menu items
 // so we can get a fancy scroll animation
 menuItems.click(function(e){
@@ -33,7 +32,7 @@ menuItems.click(function(e){
       offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
   $('html, body').stop().animate({
       scrollTop: offsetTop
-  }, 850);
+  }, 150);
   e.preventDefault();
 });
 
