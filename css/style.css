@@ -245,3 +245,16 @@ textarea {
   }
 }
 
+a{
+  transition:all 0.3s ease-in-out;
+  &:hover{
+    color: #838080;
+  }
+ }
+.active{
+   a{
+     color:#F38A8A;
+     border-bottom: 3px solid #F38A8A;
+    }
+  }
+
