@@ -1,67 +1,59 @@
 {
   "0": {
-    "image": "",
+    "image": "https://placehold.co/200",
     "name": "Sparlic",
     "description": "Garlic and parsley dip (spicy or not) Jalapeno dip with onion",
-    "price": 0,
-    "status": "active",
-    "size": ["L", "XL"]
+    "price": [{"L": 0}, {"XL": 0}],
+    "status": "active"
   },
   "1":{
-    "image": "",
+    "image": "https://placehold.co/200",
     "name": "Olive Dip",
     "description": "green olives w/mayo",
-    "price": 0,
-    "status": "active",
-    "size": []
+    "price": [{"M": 0}, {"XL": 0}],
+    "status": "active"
   },
   "2":{
-    "image": "",
+    "image": "https://placehold.co/200",
     "name": "Baba Ganoush",
     "description": "creamy eggplant dip",
-    "price": 0,
-    "status": "active",
-    "size": []
+    "price": [{"M": 0}, {"L": 0}, {"XL": 0}],
+    "status": "active"
   },
   "3":{
     "image": "",
     "name": "Onion Dip",
     "description": "",
-    "price": 0,
-    "status": "active",
-    "size": []
+    "price": [{"M": 0}, {"L": 0}],
+    "status": "active"
   },
   "4":{
     "image": "",
     "name": "Dill Dip",
     "description": "",
-    "price": 0,
-    "status": "active",
-    "size": []
+    "price": [{"M": 0}, {"L": 0}, {"XL": 0}],
+    "status": "active"
   },
   "5":{
-    "image": "",
+    "image": "https://placehold.co/200",
     "name": "Hummus",
     "description": "",
-    "price": 0,
-    "status": "active",
-    "size": []
+    "price": [{"L": 0}, {"XL": 0}],
+    "status": "active"
   },
   "6":{
     "image": "",
     "name": "Matbucha",
     "description": "green olives w/mayo",
-    "price": 0,
-    "status": "active",
-    "size": []
+    "price": [{"M": 0}],
+    "status": "active"
   },
   "7":{
     "image": "",
     "name": "Garlic Confit",
     "description": "green olives w/mayo",
-    "price": 0,
-    "status": "active",
-    "size": []
+    "price": [{"M": 0}, {"L": 0}],
+    "status": "active"
   }
 }
 

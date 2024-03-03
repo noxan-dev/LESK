@@ -23,17 +23,21 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel+Decorative:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel+Decorative:wght@400;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-<nav class="fixed px-4 invisible lg:visible w-max inline">
+<nav class="fixed px-4 hidden lg:block w-max">
   <div class="h-screen grid place-content-center font-bold">
     <ul id="mainNav" class="space-y-3">
-      <li class="active space-x-2"><span class="text-xl hover:text-2xl">-</span><a class="hover:text-2xl" href="#introduction">Home</a></li>
-      <li class="space-x-2"><span class="text-xl hover:text-2xl">-</span><a class="hover:text-2xl" href="#menu">Menu</a></li>
-      <li class="space-x-2"><span class="text-xl hover:text-2xl">-</span><a class="hover:text-2xl" href="#contact">Contact</a></li>
-<!--      <li class="hidden space-x-1"><span class="text-2xl">-</span><a class="hover:text-2xl" href="/order.html">Order</a></li>-->
+      <li class="active space-x-2"><span class="text-xl hover:text-2xl">-</span><a class="hover:text-2xl"
+                                                                                   href="#introduction">Home</a></li>
+      <li class="space-x-2"><span class="text-xl hover:text-2xl">-</span><a class="hover:text-2xl" href="#menu">Menu</a>
+      </li>
+      <li class="space-x-2"><span class="text-xl hover:text-2xl">-</span><a class="hover:text-2xl" href="#contact">Contact</a>
+      </li>
+      <!--      <li class="hidden space-x-1"><span class="text-2xl">-</span><a class="hover:text-2xl" href="/order.html">Order</a></li>-->
     </ul>
   </div>
 </nav>
@@ -42,7 +46,7 @@
     <div class="h-screen mx-auto">
       <div
         class="grid text-center font-bold place-content-center bg-gradient-to-b from-[#e6e6e6] from-80% to-white h-3/5">
-        <div class="container">
+        <div class="container space-y-8">
           <h1 class="font-['Cinzel_Decorative'] text-[6rem]">LE'SK</h1>
           <p class="text-md md:text-lg">Le'Kivied Shabbos Kodesh</p>
           <p class="text-md md:text-lg">ADD TO YOUR SHABBOS TABLE <br> A TASTE OF KEDUSHA</p>
@@ -72,23 +76,41 @@
       <div class="grid gap-4 md:gap-8 place-content-center">
         <div class="text-center">
           <h2 class="text-2xl">DIPS</h2>
-          <h4 class="font-bold text-red-700">NOTE: All dips are pareve made with meat equipment</h4>
+          <details class="">
+            <summary class="font-bold text-red-700">NOTE</summary>
+            <h4 class="font-bold text-red-700">All dips are pareve made with meat equipment</h4>
+          </details>
         </div>
         <h2 class="text-2xl underline text-center">MENU</h2>
-        <div id="dips" class="w-fit grid grid-cols-2 gap-y-4 md:gap-8">
+        <div id="dips" class="grid grid-cols-2 auto-rows-auto xl:grid-cols-3 gap-y-4 md:gap-8">
 
         </div>
       </div>
     </div>
   </section>
   <section id="contact" class="snap-start">
-    <div class="h-screen bg-gradient-to-b from-[#e6e6e6] from-80% to-white">
-      <h3>Contact Us</h3>
-
+    <div class="h-screen grid bg-gradient-to-b from-[#e6e6e6] from-80% to-white">
+      <div class="flex flex-col gap-2 text-center place-content-center">
+        <h2 class="text-2xl">Contact Us</h2>
+        <p>Want to get in touch?</p>
+        <h3><a href="mailto:example@example.com" class="text-xl hover:text-2xl">example@example.com</a></h3>
+        <hr class="w-32 h-1 mx-auto my-4 bg-[#838080] border-0 rounded-lg md:my-10">
+      </div>
+      <div class="flex flex-col gap-8 items-center">
+        <p class="text-lg">Want to make an order?</p>
+        <div id="payment" class="flex flex-col md:flex-row gap-4 lg:gap-8">
+          <a href=""><img id="zelle" class="rounded" src="https://placehold.co/200?text=zelle" alt=""></a>
+          <a href=""><img id="paypal" class="rounded" src="https://placehold.co/200?text=paypal" alt=""></a>
+          <a href=""><img id="cashapp" class="rounded" src="https://placehold.co/200?text=cashapp" alt=""></a>
+        </div>
+      </div>
     </div>
   </section>
+
+
 </main>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="js/app.js"></script>
 </body>
 
