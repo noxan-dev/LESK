@@ -1,9 +1,11 @@
 const menu = $('#menu')
 const dips = $('#dips')
-// https://raw.githubusercontent.com/noxan-dev/LESK/master/menu.json?token=GHSAT0AAAAAABULC6SXOFRAEJLPIWSQCPAEZNPAAKQ
-$.getJSON('./menu.json', function (data) {
+// https://raw.githubusercontent.com/noxan-dev/LESK/master/menu.json
+// ./menu.json
+$.getJSON('https://raw.githubusercontent.com/noxan-dev/LESK/master/menu.json', function (data) {
   $.each(data, function (key, val) {
-    const div = $(`
+    if (val.active) {
+      const div = $(`
       <div class="card max-w-sm rounded overflow-hidden shadow-lg p-2 mx-4 md:m-0 bg-white">
 <!--        <details name="dip-image">-->
 <!--          <summary class="">Image</summary>-->
@@ -13,10 +15,11 @@ $.getJSON('./menu.json', function (data) {
         <p class="flex gap-x-1"><span>About:</span> ${val.description}</p>
         <ul class="list-none p-0">${val.price.map(item => `<li>Size: ${Object.keys(item)[0]}, Price: $${Object.values(item)[0]}</li>`).join('')}</ul>
       </div>`);
-    if (val.hasOwnProperty("image")) {
-      div.find("img").attr("src", val.image);
+      if (val.hasOwnProperty("image")) {
+        div.find("img").attr("src", val.image);
+      }
+      $("#dips").append(div);
     }
-    $("#dips").append(div);
   })
 })
 
@@ -66,4 +69,22 @@ $(window).scroll(function () {
       .end().filter('[href="#' + id + '"]').parent().addClass("active");
   }
 });
+
+// const formEl = document.getElementById('myForm');
+//
+// formEl.addEventListener('submit', event => {
+//   event.preventDefault();
+//
+//   const formData = new FormData(formEl);
+//   const data = Object.fromEntries(formData);
+//
+//   fetch("./menu.json", {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify(data)
+//   });
+//
+// })
 

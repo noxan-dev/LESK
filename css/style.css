@@ -163,9 +163,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -237,52 +237,53 @@ textarea {
 }
 
 :root {
-    --borderColor: #838080;
+  --borderColor: #838080;
 }
 
 a {
-    position: relative;
-    margin: auto;
-    transition:all 0.3s ease-in-out;
+  position: relative;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
 
-    &:hover {
-      color: var(--borderColor);
-    }
+  &:hover {
+    color: var(--borderColor);
+  }
 
-    &::before,
-    &::after {
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        transition: .3s ease-in-out;
-    }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transition: .3s ease-in-out;
+  }
 
-    &::before {
-        top: -5px;
-        left: -5px;
-        border-top: 1px solid var(--borderColor);
-        border-left: 1px solid var(--borderColor);
-    }
+  &::before {
+    top: -5px;
+    left: -5px;
+    border-top: 1px solid var(--borderColor);
+    border-left: 1px solid var(--borderColor);
+  }
 
-    &::after {
-        right: -5px;
-        bottom: -5px;
-        border-bottom: 1px solid var(--borderColor);
-        border-right: 1px solid var(--borderColor);
-    }
+  &::after {
+    right: -5px;
+    bottom: -5px;
+    border-bottom: 1px solid var(--borderColor);
+    border-right: 1px solid var(--borderColor);
+  }
 
-    &:hover::before,
-    &:hover::after {
-        width: calc(100% + 9px);
-        height: calc(100% + 9px);
-    }
+  &:hover::before,
+  &:hover::after {
+    width: calc(100% + 9px);
+    height: calc(100% + 9px);
+  }
 }
 
 .active {
   span {
     visibility: hidden;
   }
+
   a {
     color: var(--borderColor);
     border: 1px solid;
